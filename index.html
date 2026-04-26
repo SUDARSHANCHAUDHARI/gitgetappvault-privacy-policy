@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — GitGetAppVault</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #222;
+      background: #fff;
+      padding: 24px 16px;
+    }
+    .container { max-width: 800px; margin: 0 auto; }
+    h1 { font-size: 1.8rem; margin-bottom: 4px; }
+    .updated { color: #666; font-size: 0.9rem; margin-bottom: 32px; }
+    h2 { font-size: 1.15rem; margin: 28px 0 8px; color: #111; }
+    p { margin-bottom: 12px; }
+    ul { margin: 8px 0 12px 20px; }
+    ul li { margin-bottom: 6px; }
+    a { color: #0366d6; }
+    footer { margin-top: 48px; font-size: 0.85rem; color: #888; border-top: 1px solid #eee; padding-top: 16px; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0d1117; color: #e6edf3; }
+      h2 { color: #e6edf3; }
+      a { color: #58a6ff; }
+      footer { border-color: #30363d; color: #8b949e; }
+      .updated { color: #8b949e; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy — GitGetAppVault</h1>
+    <p class="updated">Last updated: April 26, 2026</p>
+
+    <h2>Overview</h2>
+    <p>GitGetAppVault is a GitHub repository browser developed by SudarshanTechLabs. This policy explains how the app handles your data. The short version: we collect as little as possible and keep everything on your device.</p>
+
+    <h2>What We Don't Collect</h2>
+    <p>We do not collect, store, or transmit:</p>
+    <ul>
+      <li>Personal information or real name</li>
+      <li>Location data</li>
+      <li>Device identifiers or advertising IDs</li>
+      <li>Crash reports or analytics</li>
+      <li>Browsing history outside the app</li>
+      <li>Any data to our own servers — we have none</li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <p>The app uses the following Android permissions:</p>
+    <ul>
+      <li><strong>INTERNET</strong> — required to fetch repository data from the GitHub API.</li>
+      <li><strong>ACCESS_NETWORK_STATE</strong> — used to detect whether a network connection is available before making requests.</li>
+    </ul>
+    <p>No other permissions are requested. The app does not access your camera, microphone, contacts, location, or files.</p>
+
+    <h2>GitHub Authentication</h2>
+    <p>If you choose to sign in with GitHub, the app uses GitHub's Device Flow — you visit GitHub's website directly and approve access there. The resulting access token is stored locally on your device using Android Keystore encryption (AES-256-GCM, hardware-backed where supported). The token is never sent to anyone other than GitHub's API.</p>
+
+    <h2>Local Storage</h2>
+    <p>The app stores the following data locally on your device only:</p>
+    <ul>
+      <li>Cached repository data to reduce API calls</li>
+      <li>Search history for convenience</li>
+      <li>Your preferences (theme, settings)</li>
+      <li>GitHub auth token (encrypted, as described above)</li>
+    </ul>
+    <p>All local data is cleared when you uninstall the app.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>The app communicates exclusively with the <strong>GitHub API</strong> (api.github.com) to load repository and user data. Your use of GitHub is subject to <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub's Privacy Policy</a>.</p>
+    <p>No other third-party SDKs, analytics libraries, or ad networks are included in the app.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>This app is not directed at children under 13. We do not knowingly collect any information from children.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If this policy changes, the updated version will be posted at this URL with a new "Last updated" date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy? Reach us at <a href="mailto:sunny.sudarshan@gmail.com">sunny.sudarshan@gmail.com</a>.</p>
+
+    <footer>
+      <p>SudarshanTechLabs &mdash; GitGetAppVault</p>
+    </footer>
+  </div>
+</body>
+</html>
