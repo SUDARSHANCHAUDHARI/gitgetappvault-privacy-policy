@@ -1,8 +1,8 @@
 # GitGetAppVault Privacy Policy
 
 **Effective Date:** May 17, 2026
-_Last updated: May 17, 2026_
-**Version:** 1.1.0
+_Last updated: November 9, 2026_
+**Version:** 1.2.0
 
 GitGetAppVault ("we," "our," or "us") is a Kotlin Multiplatform app. GitGetAppVault is a Kotlin Multiplatform GitHub repository browser that can search GitHub and optionally authenticate through GitHub device flow. This Privacy Policy explains what information the app collects, how it is used, and the choices you have. By installing or using GitGetAppVault you agree to the practices described below.
 
@@ -43,20 +43,22 @@ GitGetAppVault ("we," "our," or "us") is a Kotlin Multiplatform app. GitGetAppVa
 - GitHub retains API/account data according to GitHub policies.
 
 ### Data Security
-- Data is protected using platform security controls available on Android, the browser, Firebase, Google, GitHub, or other services named in this policy.
+- Your GitHub token is held in the platform's secure storage where one is available, inside the app's private storage.
+- In transit, requests to the GitHub API go over HTTPS.
+- **No Sudarshan Tech Labs server exists**, so there is no third place holding your data. **The app uses no Firebase** — only a `google-services.json.example` sample file is in the repository, and no Firebase dependency is declared in any build file.
 - Local data remains on your device or browser unless a feature you use requires a named third-party service.
 - Network communication uses HTTPS/TLS where applicable.
 - You should protect your device, browser profile, and Google/GitHub accounts with strong authentication.
 
 ## Data Sharing
 
-### Family Groups
-- GitGetAppVault does not use family groups unless explicitly described in this policy.
-- If this app includes pairing, sharing, or collaboration features, data is shared only with the people or services required for the feature you choose.
-- You control feature use through the app settings, permissions, account controls, or platform settings.
+### Sharing With Other People
+- **GitGetAppVault has no sharing, pairing or collaboration features.** It is a single-user tool for browsing your own GitHub account.
 
 ### Third Parties
-- GitHub receives API requests, search queries, and authentication requests when you use GitHub features.
+- **GitHub, and nothing else.** GitHub receives API requests, search queries and authentication requests when you use GitHub features, at `api.github.com`, and serves profile images from `avatars.githubusercontent.com`. Those are the only hosts the app contacts.
+- Requests use **your own** GitHub token, so GitHub processes them under your own account.
+- **The app contains no analytics service, no crash reporting, no advertising SDK and no Firebase.** It does keep an on-device usage record (`UsageAnalyticsManager`) to drive in-app suggestions; that code makes no network calls and the record never leaves your device.
 
 We do **not** share your data with:
 - Data brokers
@@ -177,19 +179,18 @@ To request deletion of your data:
 4. Request account/data deletion and include enough detail for us to identify the app and any account, if one exists
 5. We will confirm what data can be deleted and complete the request according to the retention terms above
 
-## Firebase and Google Services
+## Third-Party Services
 
-This app may use the following services depending on the features you enable and the installed version:
+One:
 
-- GitHub API
-- GitHub OAuth/device flow
+- **GitHub** — the REST API and the OAuth device flow
 
-Please review relevant third-party privacy policies:
+**No Firebase and no Google service of any kind.** Earlier versions of this policy named Firebase and linked its privacy policy; the app has never declared a Firebase dependency.
 
-- [Google Privacy Policy](https://policies.google.com/privacy)
-- [Firebase Privacy Policy](https://firebase.google.com/support/privacy)
-- [Google Play Terms](https://play.google.com/about/play-terms/)
+Please review:
+
 - [GitHub Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement)
+- [Google Play Terms](https://play.google.com/about/play-terms/), if you installed the Android build from Play
 
 ## About GitGetAppVault
 
@@ -203,9 +204,17 @@ The app collects only the data needed for the features described in this policy,
 
 ---
 
-**Last Updated:** May 17, 2026
+**Last Updated:** November 9, 2026
 
 ---
+
+## Recent Updates (Version 1.2.0 - November 9, 2026)
+
+- **Removed Firebase.** The policy named it as a security control and linked its privacy policy. The app has never declared a Firebase dependency in any build file; the only trace of it in the repository is a `google-services.json.example` sample.
+- **Said that GitHub is the only third party**, and named the two hosts the app actually contacts: `api.github.com` and `avatars.githubusercontent.com`. Requests use your own GitHub token, so GitHub processes them under your own account.
+- **Disclosed the on-device usage record.** `UsageAnalyticsManager` keeps a local record to drive in-app suggestions. It makes no network calls and the record never leaves your device — worth saying plainly, since the word "analytics" in a file name invites the opposite assumption.
+- **Removed the "Family Groups" scaffold heading**, which described pairing and collaboration features this single-user tool does not have.
+- Browser references are kept deliberately: GitGetAppVault has a real web target, so they apply here.
 
 ## Recent Updates (Version 1.1.0 - May 17, 2026)
 
